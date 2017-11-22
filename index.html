@@ -3,6 +3,7 @@
   </head>
   <body>
     <form
+      id="gform"
       method="POST"
       action="">
       <label>
@@ -19,5 +20,9 @@
       </label>
       <input type="submit" value="Submit" />
     </form>
+    <div style="display:none;" id="thankyou_message">
+      <h2>Thank you!</h2>
+    </div>
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   </body>
 </html>
