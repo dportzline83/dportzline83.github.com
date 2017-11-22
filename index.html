@@ -1,27 +1,33 @@
+<!doctype html>
 <html>
   <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <form
-      id="gform"
-      method="POST"
-      action="">
-      <label>
-        Name
-        <input name="name" type="text" />
-      </label>
-      <label>
-        Email
-        <input name="email" type="email" />
-      </label>
-      <label>
-        Account number
-        <input name="account" type="password" />
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
-    <div style="display:none;" id="thankyou_message">
-      <h2>Thank you!</h2>
+    <div>
+      <form
+        id="gform"
+        method="POST"
+        action=""
+        class="pure-form pure-g form"
+      >
+        <div class="pure-u-2-3 form-content">
+        <fieldset class="pure-group">
+          <input id="name" name="name" class="pure-input-1" type="text" placeholder="Name" required />
+          <input id="email" name="email" class="pure-input-1" type="email" placeholder="Email" required />
+          <input id="account" name="account" class="pure-input-1" type="password" placeholder="Account number" required />
+        </fieldset>
+        <input type="submit" class="pure-button pure-button-primary pure-input-1" value="Submit"/>
+        </div>
+      </form>
+      <div style="display:none;" id="thankyou_message">
+        <h2>Thank you!</h2>
+      </div>
     </div>
     <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   </body>
