@@ -9,24 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div>
-      <form
-        id="gform"
-        method="POST"
-        action=""
-        class="pure-form pure-g form"
-      >
-        <div class="pure-u-2-3 form-content">
-        <fieldset class="pure-group">
-          <input id="name" name="name" class="pure-input-1" type="text" placeholder="Name" required />
-          <input id="email" name="email" class="pure-input-1" type="email" placeholder="Email" required />
-          <input id="account" name="account" class="pure-input-1" type="password" placeholder="Account number" required />
-        </fieldset>
-        <input type="submit" class="pure-button pure-button-primary pure-input-1" value="Submit"/>
+    <div class="pure-g">
+      <div class="pure-u-2-3 form-content">
+        <h1 class="center">Contact Us</h1>
+        <form
+          id="gform"
+          method="POST"
+          action=""
+          class="pure-form"
+        >
+          <fieldset class="pure-group">
+            <input id="name" name="name" class="pure-input-1" type="text" placeholder="Name" required />
+            <input id="email" name="email" class="pure-input-1" type="email" placeholder="Email" required />
+            <input id="account" name="account" class="pure-input-1" type="password" placeholder="Account number" required />
+          </fieldset>
+          <input type="submit" class="pure-button pure-button-primary pure-input-1" value="Submit"/>
+        </form>
+        <div class="center" style="display:none;" id="thankyou_message">
+          <h2>Thank you!</h2>
         </div>
-      </form>
-      <div style="display:none;" id="thankyou_message">
-        <h2>Thank you!</h2>
       </div>
     </div>
     <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
